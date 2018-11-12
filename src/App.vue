@@ -186,6 +186,7 @@
       //   .then(response => response.json())
       //   .then(data => {
           data1.sort((a, b) => sort(a, b, 'name'))
+          
           this.updateJeffs(data1);
         // });
     },

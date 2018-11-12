@@ -2,15 +2,20 @@
 <article>
   <Header />
     <Intro />
-    <Download :mobile="true" />
-    <section class="content">
-      <div class="container">
-        <Jeff v-for="(jeff, index) in jeffs" :key="jeff.name" :jeff="jeff" />
-      </div>
-    </section>
-    <Download :mobile="false" />
-    <Links />
-    <Merchandise :isHomepage="true" />
+    <div v-if="!jeffs.length">
+      <Loader />
+    </div>
+    <div v-else>
+      <Download :mobile="true" />
+      <section class="content">
+        <div class="container">
+          <Jeff v-for="(jeff, index) in jeffs" :key="jeff.name" :jeff="jeff" />
+        </div>
+      </section>
+      <Download :mobile="false" />
+      <Links />
+      <Merchandise :isHomepage="true" />
+    </div>
   </article>
 </template>
 
@@ -24,6 +29,7 @@
   import Jeff from '@/components/Jeff.vue'
   import Download from '@/components/Download.vue'
   import Intro from '@/components/Intro.vue'
+  import Loader from '@/components/Loader.vue'
 
   export default {
     name: 'Cult-of-Jeff-Goldvue',
@@ -35,6 +41,7 @@
       Download,
       Intro,
       Jeff,
+      Loader
     },
     computed: {
       ...mapState(['jeffs'])

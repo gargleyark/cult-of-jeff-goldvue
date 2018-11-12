@@ -1,8 +1,15 @@
 <template>
-  <div class="loader"></div>
+  <div class="container">
+    <div class="loader"></div>
+  </div>
 </template>
 
 <style scoped lang="scss">
+  .container {
+    position: relative;
+    min-height: 300px;
+  }
+
   .loader {
     border: 16px solid #f3f3f3; /* Light grey */
     border-top: 16px solid #f00; /* Blue */
@@ -10,9 +17,9 @@
     width: 30px;
     height: 30px;
     margin: auto;
-    margin-top: 150px;
+    margin-top: 120px;
     animation: spin 2s linear infinite;
-    position: fixed;
+    position: absolute;
     top: 0px;
     left: 0px;
     left: 50%;
