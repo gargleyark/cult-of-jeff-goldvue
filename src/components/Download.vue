@@ -1,6 +1,6 @@
 <template>
   <div class="download" :class="{ mobile: mobile }">
-    <a href="/jeffs.zip"> </a>
+    <a href="jeffs.zip"> </a>
   </div>
 </template>
 
