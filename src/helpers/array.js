@@ -8,4 +8,6 @@ const sort = (a, b, param) => {
   return 0
 }
 
-export { sort }
+const getRandom = array => array[parseInt(Math.random() * array.length)]
+
+export { sort, getRandom }
