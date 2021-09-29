@@ -1,0 +1,8 @@
+{
+  "name": "jeff-goldvue",
+  "short_name": "jeff-goldvue",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#00ffff"
+}
