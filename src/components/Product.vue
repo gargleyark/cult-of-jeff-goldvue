@@ -7,17 +7,17 @@
 </template>
 
 <script>
-  export default {
-    name: 'product',
-    props: {
-      product: Object,
+export default {
+  name: 'product',
+  props: {
+    product: Object,
+  },
+  methods: {
+    getImgUrl(src) {
+      return require(`../assets/imgs-not-jeffs/${src}`)
     },
-    methods: {
-      getImgUrl(src) {
-        return require('../assets/imgs-not-jeffs/' + src)
-      }
-    }
-  };
+  },
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

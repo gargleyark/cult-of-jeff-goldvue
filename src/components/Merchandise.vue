@@ -10,22 +10,22 @@
 </template>
 
 <script>
-import { mapState } from "vuex";
+import { mapState } from 'vuex'
 
-import Product from "./Product.vue";
+import Product from './Product.vue'
 
 export default {
-  name: "merchandise",
+  name: 'merchandise',
   props: {
     isHomepage: Boolean,
   },
   computed: {
-    ...mapState(["products"]),
+    ...mapState(['products']),
   },
   components: {
     Product,
   },
-};
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

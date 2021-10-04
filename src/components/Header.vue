@@ -9,14 +9,14 @@
 </template>
 
 <script>
-  import { mapState } from 'vuex';
-  
-  export default {
-    name: 'page-header',
-    computed: {
-      ...mapState(['headerText'])
-    },
-  }
+import { mapState } from 'vuex'
+
+export default {
+  name: 'page-header',
+  computed: {
+    ...mapState(['headerText']),
+  },
+}
 </script>
 
 <style scoped lang="scss">
@@ -38,7 +38,7 @@
       margin: 30px;
       display: inline;
     }
-  
+
     img {
       display: none;
 

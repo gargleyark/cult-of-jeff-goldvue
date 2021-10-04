@@ -21,18 +21,18 @@
 
 <script>
 // @ is an alias to /src
-import { mapState } from "vuex";
-import Header from "@/components/Header.vue";
-import Footer from "@/components/Footer.vue";
-import Merchandise from "@/components/Merchandise.vue";
-import Links from "@/components/Links.vue";
-import Jeff from "@/components/Jeff.vue";
-import Download from "@/components/Download.vue";
-import Intro from "@/components/Intro.vue";
-import Loader from "@/components/Loader.vue";
+import { mapState } from 'vuex'
+import Header from '@/components/Header.vue'
+import Footer from '@/components/Footer.vue'
+import Merchandise from '@/components/Merchandise.vue'
+import Links from '@/components/Links.vue'
+import Jeff from '@/components/Jeff.vue'
+import Download from '@/components/Download.vue'
+import Intro from '@/components/Intro.vue'
+import Loader from '@/components/Loader.vue'
 
 export default {
-  name: "Cult-of-Jeff-Goldvue",
+  name: 'Cult-of-Jeff-Goldvue',
   components: {
     Header,
     Footer,
@@ -44,9 +44,9 @@ export default {
     Loader,
   },
   computed: {
-    ...mapState(["jeffs"]),
+    ...mapState(['jeffs']),
   },
-};
+}
 </script>
 
 <style scoped lang="scss">

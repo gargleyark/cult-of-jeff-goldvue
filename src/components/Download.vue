@@ -6,11 +6,11 @@
 
 <script>
 export default {
-  name: "Download",
+  name: 'Download',
   props: {
     mobile: Boolean,
   },
-};
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

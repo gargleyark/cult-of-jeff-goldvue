@@ -7,16 +7,16 @@
 
 <script>
 export default {
-  name: "jeff",
+  name: 'jeff',
   props: {
     jeff: Object,
   },
   methods: {
     getImgUrl(src) {
-      return require("../assets/jeffs/" + src);
+      return require(`../assets/jeffs/${src}`)
     },
   },
-};
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
