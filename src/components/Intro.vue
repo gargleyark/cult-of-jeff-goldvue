@@ -67,6 +67,10 @@ export default {
         "I'm working on something that will change the world, and human life as we know it.",
         "How do you know they can't breed?",
         "Hey, you want some good parental advice? Don't listen to me.",
+        "You think they'll have that on the tour?",
+        "What goes up must come down.",
+        "Perception of legitimacy is more important than legitimacy itself. That's the greater truth.",
+        "You have to leave now, and never come back here. Have you ever heard of insect politics? Neither have I. Insects don't have politics. They're very brutal. No compassion, no compromise. We can't trust the insect. I'd like to become the first insect politician.",
       ];
 
       const quote = getRandom(quotes);
