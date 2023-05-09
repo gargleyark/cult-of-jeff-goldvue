@@ -208,6 +208,34 @@ export default {
         img: "braveheartjeff.png",
         name: "braveheartjeff",
       },
+      {
+        img: "boatjeff.png",
+        name: "boatjeff",
+      },
+      {
+        img: "gravyboatjeff.png",
+        name: "gravyboatjeff",
+      },
+      {
+        img: "gravyboatboatjeff.png",
+        name: "gravyboatboatjeff",
+      },
+      {
+        img: "coastguardjeff.png",
+        name: "coastguardjeff",
+      },
+      {
+        img: "jeff-with-peas.png",
+        name: "jeff-with-peas",
+      },
+      {
+        img: "pooljeff.png",
+        name: "pooljeff",
+      },
+      {
+        img: "britishjeff.png",
+        name: "britishjeff",
+      },
     ];
 
     this.updateProducts(products);
