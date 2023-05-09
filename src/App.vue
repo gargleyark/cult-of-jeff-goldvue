@@ -221,7 +221,7 @@ export default {
         name: "gravyboatboatjeff",
       },
       {
-        img: "coastguardjeff.png",
+        img: "coastguardjeff.gif",
         name: "coastguardjeff",
       },
       {
@@ -249,7 +249,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="css">
 @import url("https://fonts.googleapis.com/css?family=Lato|Slabo+27px");
 
 html {
@@ -272,31 +272,33 @@ h2 {
 
 #nav {
   padding: 15px;
+}
+#nav a {
+  font-weight: bold;
+  color: #2c3e50;
+  cursor: pointer;
+  text-decoration: underline;
+  margin: 0px 10px;
+  padding: 0px 10px;
+}
+#nav a.router-link-exact-active {
+  color: #42b983;
+}
 
-  @media screen and (min-width: 710px) {
-    padding: 30px;
+#nav a img {
+  width: 40px;
+  height: auto;
+}
+
+@media screen and (min-width: 710px) {
+  #nav a img {
+    width: 60px;
   }
+}
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    cursor: pointer;
-    text-decoration: underline;
-    margin: 0px 10px;
-    padding: 0px 10px;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-
-    img {
-      width: 40px;
-      height: auto;
-
-      @media screen and (min-width: 710px) {
-        width: 60px;
-      }
-    }
+@media screen and (min-width: 710px) {
+  #nav {
+    padding: 30px;
   }
 }
 

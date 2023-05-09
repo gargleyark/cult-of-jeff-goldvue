@@ -23,21 +23,20 @@
 
 <script>
 export default {
-  name: 'links',
-}
+  name: "links",
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
+<style scoped lang="css">
 .links {
   padding-bottom: 15px;
+}
+.links img {
+  width: 32px;
+}
 
-  img {
-    width: 32px;
-  }
-
-  a {
-    padding: 0px 10px;
-  }
+.links a {
+  padding: 0px 10px;
 }
 </style>

@@ -6,7 +6,7 @@
   </footer>
 </template>
 
-<style scoped lang="scss">
+<style scoped lang="css">
 .footer {
   padding-top: 10px;
   margin: auto;
@@ -18,11 +18,11 @@
   color: #777;
   background: #ddd;
   font-family: "Slabo 27px", serif;
+}
 
-  img {
-    margin: 0px 10px;
-    width: 16px;
-    height: auto;
-  }
+.footer img {
+  margin: 0px 10px;
+  width: 16px;
+  height: auto;
 }
 </style>

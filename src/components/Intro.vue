@@ -124,7 +124,7 @@ export default {
 };
 </script>
 
-<style scoped lang="scss">
+<style scoped lang="css">
 .intro {
   color: #999;
 }

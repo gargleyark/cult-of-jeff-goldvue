@@ -1,40 +1,27 @@
 <template>
   <div class="merchandise">
-    <h2>Now available on merchandise</h2>
-    <Product
-      v-for="(product, index) in products"
-      :key="index"
-      :product="product"
-    />
+    <h2>Not available on merchandise</h2>
   </div>
 </template>
 
 <script>
-import { mapState } from 'vuex'
-
-import Product from './Product.vue'
-
 export default {
-  name: 'merchandise',
+  name: "merchandise",
   props: {
     isHomepage: Boolean,
   },
-  computed: {
-    ...mapState(['products']),
-  },
-  components: {
-    Product,
-  },
-}
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
+<style scoped lang="css">
 .merchandise {
   width: 100%;
   margin: auto;
+}
 
-  @media only screen and (min-width: 710px) {
+@media only screen and (min-width: 710px) {
+  .merchandise {
     width: 500px;
     margin: auto;
   }
@@ -43,8 +30,10 @@ export default {
 .merchandise h2 {
   font-size: 32px;
   padding-top: 15px;
+}
 
-  @media only screen and (min-width: 710px) {
+@media only screen and (min-width: 710px) {
+  .merchandise h2 {
     font-size: 24px;
   }
 }

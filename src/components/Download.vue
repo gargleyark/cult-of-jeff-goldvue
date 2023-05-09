@@ -6,23 +6,25 @@
 
 <script>
 export default {
-  name: 'Download',
+  name: "Download",
   props: {
     mobile: Boolean,
   },
-}
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
+<style scoped lang="css">
 .download {
   text-align: center;
   width: 100%;
   margin: auto;
   margin-top: 50px;
   margin-bottom: 80px;
+}
 
-  @media only screen and (min-width: 710px) {
+@media only screen and (min-width: 710px) {
+  .download {
     width: 500px;
   }
 }
@@ -39,8 +41,10 @@ export default {
   display: block;
   margin: auto;
   font-size: 36px;
+}
 
-  @media only screen and (min-width: 710px) {
+@media only screen and (min-width: 710px) {
+  .download a {
     width: 170px;
     font-size: 18px;
   }
@@ -57,10 +61,11 @@ export default {
 .download a:hover {
   background: #0f5;
   width: 90%;
+}
 
-  @media only screen and (min-width: 710px) {
+@media only screen and (min-width: 710px) {
+  .download a:hover {
     width: 250px;
   }
 }
 </style>
-

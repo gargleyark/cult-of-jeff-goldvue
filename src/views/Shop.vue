@@ -5,17 +5,17 @@
 </template>
 
 <script>
-import Merchandise from '../components/Merchandise.vue'
+import Merchandise from "../components/Merchandise.vue";
 
 export default {
-  name: 'shop',
+  name: "shop",
   components: {
     Merchandise,
   },
-}
+};
 </script>
 
-<style scoped lang="scss">
+<style scoped lang="css">
 @keyframes bg {
   5% {
     background: #af4;
